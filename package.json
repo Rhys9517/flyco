@@ -1,0 +1,34 @@
+{
+  "name": "flyco",
+  "version": "1.0.0",
+  "description": "is a magic...\r 这是一个电商网站",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uncleCSJ/Flyco.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uncleCSJ/Flyco/issues"
+  },
+  "homepage": "https://github.com/uncleCSJ/Flyco#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
+    "gulp-rev-collector": "^1.3.1"
+  }
+}

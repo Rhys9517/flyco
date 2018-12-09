@@ -1,0 +1,191 @@
+/*登录页面开始*/
+.login_page{
+    text-align: center;
+}
+.login_page h1{
+    color: #0c82d9;;
+    text-align: center;
+    font-family: "Microsoft Yahei", sans-serif;
+    font-size: 20px;
+    margin: 100px 0 20px  ;
+    text-align: center;
+}
+.login_page .btn-group {
+    width: 458px;
+    display: flex;
+    margin: 0 auto;
+}
+.login_page .btn.act{
+      background:#2264af;
+      color: #fff;
+}
+.login_page .btn{
+      width: 226px;
+      height: 42px;
+      background:#ccc;
+      color:#fff ;
+      line-height: 42px;
+      font-size: 16px;
+}
+/* 俩个输入框 */
+.login_page form ul .contact{
+    position: relative;
+    width: 298px;
+    height:30px;
+    border: 1px solid #e7e7e7;
+    line-height: 30px;
+    margin:40px 0 25px 468px;
+}
+.login_page form ul .contact .icon-youxiang{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-right: 1px solid #e7e7e7;
+    left:0;
+    top: -40px;
+    font-size: 12px;
+}
+.login_page form ul .contact .txt01{
+    width: 256px;
+    height: 27px;
+    padding-left: 40px;
+}
+
+
+.login_page form ul .pass{
+    position: relative;
+    width: 298px;
+    height:30px;
+    border: 1px solid #e7e7e7;
+    line-height: 30px;
+    margin:0 0 20px 468px;
+}
+.login_page form ul .pass .icon-mima{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-right: 1px solid #e7e7e7;
+    left:0;
+    top: -40px;
+    font-size: 12px;
+}
+.login_page form ul .pass .txt02{
+    width: 256px;
+    height: 27px;
+    padding-left: 40px;
+}
+
+
+
+
+.login_page form>button{
+	width: 300px;
+    height: 39px;
+    line-height: 39px;
+    border: 0;
+    margin-bottom: 10px;
+    background-color: #0c82d9;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.login_page form .login_bottom{
+	font-size:12px;
+	margin-bottom: 30px;
+}
+.login_page i{
+	font-size: 14px;
+	color:#b0b0b0;
+	margin-top: 40px;
+
+}
+.login_page .icon-wechat{
+    font-size: 34px;
+    color: #e7e7e7;
+}
+.login_page .icon-qq{
+    font-size: 32px;
+    color: #e7e7e7;
+}
+.login_page .log_bottom{
+    margin-left:500px;
+    margin-top: 10px;
+    width: 240px;
+    position: relative;
+}
+
+.login_page .log_bottom li{
+    float: left;
+    padding: 0 20px 10px 0;
+}
+.login_page .log_bottom li:nth-child(1){
+    margin-top:-2px;
+}
+.login_page .log_bottom a:hover{
+    color:blue;
+}
+
+.none {
+    display: none!important;
+}
+.in_b {
+    display: inline-block;
+}
+.bc {
+    margin-left: auto;
+    margin-right: auto;
+}
+.fl {
+    float: left;
+    display: inline;
+}
+.user_login {
+    width: 300px;
+    margin-top: 38px;
+}
+ .user_login li {
+    width: 298px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #e7e7e7;
+    margin-bottom: 23px;
+}
+ .user_login li span {
+    left: 0px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    border-right: 1px solid #e6e6e6;
+}
+.user_login .code {
+    width: 150px;
+}
+.user_login .txt {
+    vertical-align: middle;
+    padding-left: 40px;
+    width: 258px;
+    height: 30px;
+    line-height: 30px;
+    border: 0;
+}
+ .ccode span {
+    background: url(../image/user-code.png) no-repeat center center;
+    background-size: 50%;
+}
+ .printpic {
+    width: 107px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    margin-left: 0px;
+    border-left: 1px solid #e7e7e7;
+}
+ .user span {
+    background: url(../image/user-id.png) no-repeat center center;
+    background-size: 50%;
+}
+ .mcode span {
+    background: url(../image/user-mcode.png) no-repeat center center;
+    background-size: 50%;
+}
