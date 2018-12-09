@@ -76,7 +76,7 @@
                 <button class="btn m_static act">注册用户登录</button>
                 <button class="btn m_active">手机动态验证码登录</button>
             </div>
-            <form>
+            <form class="login_content bc">
                 <ul id="static" class="">
                     <li class="contact">
                         <i class="iconfont icon-youxiang"></i>
@@ -87,25 +87,18 @@
                         <input type="password" class="txt02" placeholder="密码" maxlength="64" id="userPwd">
                     </li>
                 </ul>
-                <ul id="active" class="none user_login bc">
-                    <li class="ccode pr clearfix"><span class="in_b pa"></span>
-                        <input type="text" class="txt code fl" id="t_checknumber" name="dr_checknumber" maxlength="4"
-                            value="" placeholder="请输入验证码" />
-                        <div class="printpic fl">
-                            <img class="dynamic" id="dregvCode" alt="图片" />
-                            <a href="javascript:void(0);">换一张</a>
-                        </div>
+                <ul id="active" class="none ">
+                    <li class="contact">
+                        <i class="iconfont icon-youxiang"></i>
+                        <input type="text" class="txt01" placeholder="请输入验证码" maxlength="64">
                     </li>
-                    <li class="user pr "><span class="in_b pa"></span>
-                        <input type="text" class="txt phone" name="d_user_phone" id="d_user_phone" placeholder="请输入手机号"
-                            maxlength="11" />
-                        <h2 class="red pa none" id="tel_p_name"></h2>
+                    <li class="pass">
+                        <i class="iconfont icon-youxiang"></i>
+                        <input type="text" class="txt01" placeholder="请输入手机号" maxlength="64">
                     </li>
-                    <li class="mcode pr clearfix"><span class="in_b pa"></span>
-                        <input type="text" class="txt code fl" id="d_checkcode" value="" placeholder="请输入手机验证码"
-                            maxlength="6" />
-                        <input type="button" id="free_code" value="获取动态验证码" class="fcode  fl" />
-                        <h2 class="red pa none" id="tel_p_psw"></h2>
+                    <li class="pass">
+                        <i class="iconfont icon-mima"></i>
+                        <input type="text" class="txt01" placeholder="请输入手机验证码" maxlength="64">
                     </li>
                 </ul>
 

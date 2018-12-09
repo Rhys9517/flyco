@@ -26,7 +26,7 @@ Login = {
 
     // 获取密码
     _this.dom.$userPwd.on('input', function (e) {
-      _this.data.pwd = _this.dom.$userPwd
+      _this.data.pwd = _this.dom.$userPwd.val()
     })
   },
   login: function () {
@@ -36,12 +36,17 @@ Login = {
       $.ajax({
         type: 'GET',
         headers: {
-          'Access-Control-Allow-Origin': 'file:///Users/will/Desktop/Flyco-master/app/json/user.json'
+          'Access-Control-Allow-Origin': '*'
         },
-        url: '../json/user.json',
+        url: '/flyco/app/static/json/user.json',
         dataType: "json",
         success: function (res) {
-          console.log(res)
+          console.log(_this.data.account);
+          console.log(_this.data.pwd)
+          if (res[0].result.userAccount == _this.data.account && res[0].result.userPwd == _this.data.pwd) {
+            alert(1);
+            location.href = "/flyco/app/static/home.html";
+          }
         }
       })
     })

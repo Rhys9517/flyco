@@ -45,7 +45,7 @@
     top: -40px;
     font-size: 12px;
 }
-.login_page form ul .contact .txt01{
+.login_page form ul .txt01{
     width: 256px;
     height: 27px;
     padding-left: 40px;
@@ -129,63 +129,12 @@
 .none {
     display: none!important;
 }
-.in_b {
-    display: inline-block;
-}
-.bc {
-    margin-left: auto;
-    margin-right: auto;
-}
-.fl {
-    float: left;
-    display: inline;
-}
-.user_login {
-    width: 300px;
-    margin-top: 38px;
-}
- .user_login li {
-    width: 298px;
-    height: 30px;
-    line-height: 30px;
-    border: 1px solid #e7e7e7;
-    margin-bottom: 23px;
-}
- .user_login li span {
-    left: 0px;
-    top: 0px;
+.login_page form ul .pass .icon-youxiang{
+    position: absolute;
     width: 30px;
     height: 30px;
-    border-right: 1px solid #e6e6e6;
-}
-.user_login .code {
-    width: 150px;
-}
-.user_login .txt {
-    vertical-align: middle;
-    padding-left: 40px;
-    width: 258px;
-    height: 30px;
-    line-height: 30px;
-    border: 0;
-}
- .ccode span {
-    background: url(../image/user-code.png) no-repeat center center;
-    background-size: 50%;
-}
- .printpic {
-    width: 107px;
-    height: 30px;
-    line-height: 30px;
-    display: block;
-    margin-left: 0px;
-    border-left: 1px solid #e7e7e7;
-}
- .user span {
-    background: url(../image/user-id.png) no-repeat center center;
-    background-size: 50%;
-}
- .mcode span {
-    background: url(../image/user-mcode.png) no-repeat center center;
-    background-size: 50%;
+    border-right: 1px solid #e7e7e7;
+    left:0;
+    top: -40px;
+    font-size: 12px;
 }
