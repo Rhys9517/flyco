@@ -7,10 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../static/css/base.css">
     <link rel="stylesheet" href="../static/css/flyco_register.css">
-    <link rel="stylesheet" href="../static/css/flyco_login.css">
     <link rel="stylesheet" href="../static/css/flyco_home.css">
-    <link rel="stylesheet" href="../static/css/iconfont.css">
-
 </head>
 
 <body>
@@ -60,7 +57,7 @@
                 </div>
             </div>
             <div class="search-box">
-                <form action="" class="search-fr">
+                <form action="" class="search-fr" method="post">
                     <input type="text" class="search-txt" promptvalue="剃须刀" value="剃须刀" style="color: rgb(169, 169, 169);">
                     <a href="">
                         <i></i>
@@ -69,76 +66,46 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="login_page">
-            <h1>欢迎登录飞科商城</h1>
-            <div class="btn-group">
-                <button class="btn m_static act">注册用户登录</button>
-                <button class="btn m_active">手机动态验证码登录</button>
+    <!-- ---------------------注册域------------------------- -->
+    <div class="login-box">
+        <div class="container">
+            <div class="login-fr">
+                <h1>欢迎注册飞科商城</h1>
+                <form action="" class="register-fr" method="POST">
+                    <ul class="user-reg">
+                        <li class="ccode">
+                            <span class="in-b"></span>
+                            <input type="text" class="number" maxlength="4" placeholder="请输入验证码" style="color: rgb(169, 169, 169);">
+                            <div class="printpic">
+                                <img src="./image/do_index.gif" alt="" class="dynamic">
+                                <a href="" style="margin-top:0px;margin-right: 6px;float: right;font-weight: 900 ;color: #0c82d9;font-size: 12px; ">换一张</a>
+                            </div>
+                        </li>
+                        <li class="user">
+                            <span class="in-b"></span>
+                            <input type="text" class="phone" maxlength="11" placeholder="请输入手机号" style="color: rgb(169, 169, 169)">
+                            <input type="submit" id="free_code" class="fcode" value="获取动态验证码">
+                        </li>
+                        <li class="mcode">
+                            <span class="in-b"></span>
+                            <input type="text" class="note" maxlength="6" placeholder="请输入手机验证码" style="color: rgb(169, 169, 169)">
+                        </li>
+                        <li class="password">
+                            <span class="in-b"></span>
+                            <input type="password" class="pass" maxlength="16" placeholder="请输入密码" style="color: rgb(169, 169, 169)"
+                                </li> </li> <li class="repeat-li">
+                            <span class="in-b "></span>
+                            <input type="password" class="repeat-pass" maxlength="16" placeholder="请输入密码" style="color: rgb(169, 169, 169)"
+                                </li> </li> </ul> <div class="regBtn">
+                            <a href="https://www.flyco.com/help-95.html" style="color: #0c82d9" class="block">《飞科商城用户服务协议》</a>
+                            <input type="submit" class="register-button" value="同意协议并注册">
             </div>
-            <form>
-                <!-- 注册用户登录 -->
-                <ul id="static" class="">
-                    <li class="contact">
-                        <i class="iconfont icon-youxiang"></i>
-                        <input type="text" class="txt01" placeholder="邮箱/手机" maxlength="64" id="userAccount">
-                    </li>
-                    <li class="pass">
-                        <i class="iconfont icon-mima"></i>
-                        <input type="password" class="txt02" placeholder="密码" maxlength="64" id="userPwd">
-                    </li>
-                </ul>
-                <!-- 手机动态验证码登录 -->
-                <ul id="active" class="">
-                        <li class="contact">
-                            <i class="iconfont icon-youxiang"></i>
-                            <input type="text" class="txt01" placeholder="邮箱/手机" maxlength="64" id="userAccount">
-                        </li>
-                        <li class="pass">
-                            <i class="iconfont icon-mima"></i>
-                            <input type="password" class="txt02" placeholder="密码" maxlength="64" id="userPwd">
-                        </li>
-                    </ul>
-
-
-                <!-- <ul id="active" class="none user_login bc">
-                    <li class="ccode pr clearfix"><span class="in_b pa"></span>
-                        <input type="text" class="txt code fl" id="t_checknumber" name="dr_checknumber" maxlength="4"
-                            value="" placeholder="请输入验证码" />
-                        <div class="printpic fl">
-                            <img class="dynamic" id="dregvCode" alt="图片" />
-                            <a href="javascript:void(0);">换一张</a>
-                        </div>
-                    </li>
-                    <li class="user pr "><span class="in_b pa"></span>
-                        <input type="text" class="txt phone" name="d_user_phone" id="d_user_phone" placeholder="请输入手机号"
-                            maxlength="11" />
-                        <h2 class="red pa none" id="tel_p_name"></h2>
-                    </li>
-                    <li class="mcode pr clearfix"><span class="in_b pa"></span>
-                        <input type="text" class="txt code fl" id="d_checkcode" value="" placeholder="请输入手机验证码"
-                            maxlength="6" />
-                        <input type="button" id="free_code" value="获取动态验证码" class="fcode  fl" />
-                        <h2 class="red pa none" id="tel_p_psw"></h2>
-                    </li>
-                </ul> -->
-
-                <button id="login">登录</button>
-                </br>
-                <div class="login_bottom">
-                    <input type="checkbox" class="check" />&nbsp;<span>两周内免登录&nbsp;|&nbsp;</span>
-                    <a href="#">忘记密码?</a>&nbsp;&nbsp;&nbsp;&nbsp;<span>还没有账号?&nbsp;</span><a href="#">立即注册</a>
-                </div>
             </form>
-            <i>—————&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他方式登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—————</i><br />
-            <ul class="log_bottom">
-                <li><a href="#" class="iconfont icon-wechat"></a></li>
-                <li><a href="#" class="iconfont icon-qq"></a></li>
-            </ul>
         </div>
     </div>
-    <!-- 尾部 -->
-    <div class="footer">
+    </div>
+     <!-- 尾部 -->
+     <div class="footer">
         <div class="container pt20">
             <div class="inner-footer">
                 <div class="fl">
@@ -272,9 +239,6 @@
             </a>
         </div>
     </div>
-
-    <script src="rescourse/jquery.js"></script>
-    <script src="js/login.js"></script>
 </body>
 
 </html>

@@ -7,10 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../static/css/base.css">
     <link rel="stylesheet" href="../static/css/flyco_register.css">
-    <link rel="stylesheet" href="../static/css/flyco_login.css">
     <link rel="stylesheet" href="../static/css/flyco_home.css">
-    <link rel="stylesheet" href="../static/css/iconfont.css">
-
 </head>
 
 <body>
@@ -69,75 +66,30 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="login_page">
-            <h1>欢迎登录飞科商城</h1>
-            <div class="btn-group">
-                <button class="btn m_static act">注册用户登录</button>
-                <button class="btn m_active">手机动态验证码登录</button>
-            </div>
-            <form>
-                <!-- 注册用户登录 -->
-                <ul id="static" class="">
-                    <li class="contact">
-                        <i class="iconfont icon-youxiang"></i>
-                        <input type="text" class="txt01" placeholder="邮箱/手机" maxlength="64" id="userAccount">
-                    </li>
-                    <li class="pass">
-                        <i class="iconfont icon-mima"></i>
-                        <input type="password" class="txt02" placeholder="密码" maxlength="64" id="userPwd">
-                    </li>
-                </ul>
-                <!-- 手机动态验证码登录 -->
-                <ul id="active" class="">
-                        <li class="contact">
-                            <i class="iconfont icon-youxiang"></i>
-                            <input type="text" class="txt01" placeholder="邮箱/手机" maxlength="64" id="userAccount">
-                        </li>
-                        <li class="pass">
-                            <i class="iconfont icon-mima"></i>
-                            <input type="password" class="txt02" placeholder="密码" maxlength="64" id="userPwd">
-                        </li>
-                    </ul>
-
-
-                <!-- <ul id="active" class="none user_login bc">
-                    <li class="ccode pr clearfix"><span class="in_b pa"></span>
-                        <input type="text" class="txt code fl" id="t_checknumber" name="dr_checknumber" maxlength="4"
-                            value="" placeholder="请输入验证码" />
-                        <div class="printpic fl">
-                            <img class="dynamic" id="dregvCode" alt="图片" />
-                            <a href="javascript:void(0);">换一张</a>
-                        </div>
-                    </li>
-                    <li class="user pr "><span class="in_b pa"></span>
-                        <input type="text" class="txt phone" name="d_user_phone" id="d_user_phone" placeholder="请输入手机号"
-                            maxlength="11" />
-                        <h2 class="red pa none" id="tel_p_name"></h2>
-                    </li>
-                    <li class="mcode pr clearfix"><span class="in_b pa"></span>
-                        <input type="text" class="txt code fl" id="d_checkcode" value="" placeholder="请输入手机验证码"
-                            maxlength="6" />
-                        <input type="button" id="free_code" value="获取动态验证码" class="fcode  fl" />
-                        <h2 class="red pa none" id="tel_p_psw"></h2>
-                    </li>
-                </ul> -->
-
-                <button id="login">登录</button>
-                </br>
-                <div class="login_bottom">
-                    <input type="checkbox" class="check" />&nbsp;<span>两周内免登录&nbsp;|&nbsp;</span>
-                    <a href="#">忘记密码?</a>&nbsp;&nbsp;&nbsp;&nbsp;<span>还没有账号?&nbsp;</span><a href="#">立即注册</a>
-                </div>
-            </form>
-            <i>—————&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他方式登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—————</i><br />
-            <ul class="log_bottom">
-                <li><a href="#" class="iconfont icon-wechat"></a></li>
-                <li><a href="#" class="iconfont icon-qq"></a></li>
-            </ul>
-        </div>
+    <!-- 轮播图/导航 -->
+    <div class="nav"></div>
+    <!-- 轮播图下边的加赠 -->
+    <div class="home_show">
+        <div class="home_show_list list01"><a href="#"><img src="image/1 (1).jpg" /></a></div>
+        <div class="home_show_list"><a href="#"><img src="image/2 (1).jpg" /></a></div>
+        <div class="home_show_list"><a href="#"><img src="image/3 (1).jpg" /></a></div>
     </div>
-    <!-- 尾部 -->
+    <!--热卖单品 -->
+    <div class="hotgoods">
+        <h2>热卖单品</h2>
+        <div></div>
+    </div>
+    <!-- 新品上市 -->
+    <div class="newgoods">
+        <h2>新品上市</h2>
+        <div></div>
+    </div>
+    <!-- 特价商品 -->
+    <div class="salesgoods">
+        <h2>特价商品</h2>
+        <div></div>
+    </div>
+    <!-- 底部 -->
     <div class="footer">
         <div class="container pt20">
             <div class="inner-footer">
@@ -272,9 +224,6 @@
             </a>
         </div>
     </div>
-
-    <script src="rescourse/jquery.js"></script>
-    <script src="js/login.js"></script>
 </body>
 
 </html>

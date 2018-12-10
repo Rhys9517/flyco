@@ -1,6 +1,7 @@
 //创建请求
 
 var gulp = require('gulp');
+const del = require('del');
 var uglify = require('gulp-uglify'); //压缩js
 var concat = require('gulp-concat'); //合并文件
 var rename = require("gulp-rename");//文件重命名
@@ -11,6 +12,7 @@ var cleanCSS = require('gulp-clean-css');  //压缩 css
 var imagemin = require('gulp-imagemin');  //压缩图片
 var sass = require('gulp-sass');    //sass  预处理器
     sass.compiler = require('node-sass');
+var gulpSequence = require('gulp-sequence') //处理异步问题  
 // var gulp = require('gulp')
     // watch = require('gulp-watch');
 // const rev = require('gulp-rev');  // 将文件名加上hash字符串
@@ -26,10 +28,12 @@ gulp.task('default',['build-html','minijs','watch','connect'])
 gulp.task('connect', function() {
   connect.server({
     root: 'dist',
-    port: 1818,
+    port: '1818',
     livereload: true
   });
 });
+
+
 //压缩html
 gulp.task('build-html' , function(){
   return gulp.src("app/static/*.html")
@@ -71,18 +75,38 @@ gulp.task('concat',function(){
 })
 //sass 预处理器
 gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
+  return gulp.src('app/static/sass/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('dist/static/css'));
 });
 
 
 //事件监听
-// gulp.task('watch', function () {
-//   // Endless stream mode
-//   return watch('css/**/*.css', { ignoreInitial: false })
-//       .pipe(gulp.dest('build'));
-// });
+gulp.task('watch', function () {
+   gulp.watch('app/**/*.*',['all'])
+  
+});
+
+
+//开发环境使用
+
+gulp.task('clean',()=>{
+  del('dist','rev')
+})
+gulp.task('watch',function(){
+  gulp.watch('app/**/*.*',['all'])
+})
+gulp.task('all',function(){
+  gulp.src('app/**/*.*')
+  .pipe(gulp.dest('dist'))
+  .pipe(connect.reload())
+})
+gulp.task('dev',function(cb){
+  gulpSequence('clean','all','watch','connect')(cb);
+})
+
+//正式环境使用 压缩html.css images
+//gulp.task('pround',[])
 //rev
 // gulp.task('rev', () =>
 //     gulp.src('src/*.css')
@@ -90,22 +114,3 @@ gulp.task('sass', function () {
 //         .pipe(gulp.dest('dist'))
 // );
 
-//练习
-
-// gulp.task('minihtml', function() {
-//     // 将你的默认的任务代码放在这
-//     console.log("开始压缩html");
-//   });
-//   gulp.task('minicss', function() {
-//     // 将你的默认的任务代码放在这
-//     console.log("开始压缩css");
-//   });
-//   gulp.task('miniimg', function() {
-//     // 将你的默认的任务代码放在这
-//     console.log("开始压缩img");
-//   });
-    
-//   gulp.task('mini', ['minihtml','minicss','miniimg'],function() {
-//     // 将你的默认的任务代码放在这
-//     console.log("压缩成功了");
-//   })
