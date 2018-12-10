@@ -142,10 +142,11 @@
 
 .link-center {
     padding: 30px 0 41px;
+    left: 750px;
 }
 
 .pa {
-    position: absolute
+    position: absolute;
 }
 
 .png-bg {

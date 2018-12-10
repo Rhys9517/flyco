@@ -85,7 +85,8 @@
     width: 72px;
     margin-left: 24px;
     background: #0c82d9;
-    /* -webkit-border-radius:5px; */
+    border-radius: 5px;
+    -webkit-border-radius:5px;
 }
 
 .logo-head .in_b {
