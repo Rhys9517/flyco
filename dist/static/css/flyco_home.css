@@ -1,9 +1,90 @@
-/*轮播图开始*/
-
+/*轮播图导航*/
 .nav {
-    width: 1240px;
-    height: 460px;
+    width: 183px;
+    float: left;
+    position: absolute;
+    z-index: 999;
+    font-family: "Microsoft Yahei", sans-serif;
+    color: #ffffff; 
 }
+.nav .nav_list{
+        top: 46px;
+        left: 0;
+        z-index: 9999;
+        padding: 20px 0;
+        background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+        height: 420px;
+}
+.nav .nav_list .nav_goods{
+     height:35px;
+     line-height: 35px;
+     font-size: 14px;
+     font-weight: bold;
+     padding-left:24px;
+     position: relative;
+     
+}
+.nav .nav_list .nav_goods .goods_list{
+    position: absolute;
+    left: 183px;
+    top: -20px;
+    background: #ffffff;
+    color: #000;
+    height: 460px;
+    border: 1px solid #dfdfdf;
+    border-left: none;
+    display:none;
+}
+/* 鼠标滑过二级菜单展示 */
+.nav .nav_list .nav_goods:hover{
+    background: #0c82d9;  
+}
+.nav .nav_list .nav_goods:hover .goods_list{
+    display: block; 
+}
+.nav .nav_list .nav_goods .goods_list>li{
+    position: relative;
+    float: left;
+    width: 265px;
+    height: 76px;
+    line-height: 76px;
+    font-size: 13px;  
+}
+.nav .nav_list .nav_goods .goods_list>li>.buy_it{
+    position: absolute;
+    right: 10px;
+    top: 28px;
+    width: 58px;
+    height: 22px;
+    line-height: 22px;
+    border:1px solid #26a3ff;
+    background: #fff;
+    color: #26a3ff;
+    font-size: 12px;
+    text-align: center;
+}
+.nav .nav_list .nav_goods .goods_list>li>.buy_it:hover{
+    background: #26a3ff;
+    color: #ffffff;
+}
+.nav .nav_list .nav_goods .goods_list>li>.show_it .txt{
+    font-size: 13px;
+    font-weight: 100;
+    color: #000;
+}
+.nav .nav_list .nav_goods .goods_list>li>.show_it img{
+    margin: 0 22px;
+
+}
+.nav .nav_list .nav_goods .goods_list>li>.show_it .txt:hover{
+    color: #26a3ff;
+}
+
+.nav .nav_list .nav_goods i{
+    position:absolute;
+    right: 20px;
+}
+
 
 /*轮播图下边的商品列表*/
 .home_show {
