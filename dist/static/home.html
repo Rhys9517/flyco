@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../static/css/base.css">
     <link rel="stylesheet" href="../static/css/flyco_register.css">
     <link rel="stylesheet" href="../static/css/flyco_home.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
 </head>
 
 <body>
@@ -67,13 +68,36 @@
         </div>
     </div>
     <!-- 轮播图/导航 -->
-    <div class="nav"></div>
-    <!-- 轮播图下边的加赠 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="image/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="image/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="image/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="image/5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="image/6.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="image/7.jpg" alt=""></div>
+
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination-box">
+            <div class="swiper-pagination">
+                <span>1</span>
+            </div>
+        </div>
+        
+        <!-- 如果需要导航按钮 -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+        
+        <!-- 如果需要滚动条 -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+    
     <div class="home_show">
         <div class="home_show_list list01"><a href="#"><img src="image/1 (1).jpg" /></a></div>
         <div class="home_show_list"><a href="#"><img src="image/2 (1).jpg" /></a></div>
         <div class="home_show_list"><a href="#"><img src="image/3 (1).jpg" /></a></div>
-    </div>
+    </div> 
     <!--热卖单品 -->
     <div class="hotgoods">
         <h2>热卖单品</h2>
@@ -224,6 +248,41 @@
             </a>
         </div>
     </div>
+    <script src="../static/js/swiper.min.js"></script>
+    <script>       
+  var mySwiper = new Swiper ('.swiper-container', {
+      direction: 'vertical', // 垂直切换选项
+      loop: true, // 循环模式选项
+      autoplay:true,//等同于以下设置
+      effect : 'fade',
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+        delay: 2000,
+        stopOnLastSlide: false,
+        disableOnInteraction: true,
+    },
+    fadeEffect: {
+        crossFade: true,
+    }
+    
+    // 如果需要前进后退按钮
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+    
+    // 如果需要滚动条
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+  })        
+
+    </script>
 </body>
 
 </html>
