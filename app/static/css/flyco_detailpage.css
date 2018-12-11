@@ -177,7 +177,10 @@ body{
     border: 1px solid #dfdfdf;
     background: url(../image/searchbg.png) 0 0;
     margin: 0;
-    padding: 0
+    padding: 0;
+    position: absolute;
+    left: 1065px;
+    top: 70px;
 }
 /* —————————放大镜板块———————— */
 .breadcrumbs{
@@ -270,7 +273,7 @@ a{
   .show-big-image {
     position: absolute;
     left: 476px;
-    top: 206px;
+    top: 214px;
     width: 350px;
     height: 350px;
     overflow: hidden;
@@ -285,17 +288,7 @@ a{
     width: 826px;
     height: 823px;
   }
-
-
-
-
-
-
-
-
-
-
-
+/* --------------------------------------------------- */
 
 
 .detailRight{
@@ -303,8 +296,14 @@ a{
     height: 540px;
     border: 1px solid red
 }
-
-
+.fm{
+    font-family: "Microsoft Yahei", sans-serif;
+}
+.detailTitle{
+    font-size: 23px;
+    line-height: 30px;
+    margin-top: 30px;
+}
 
 
 
