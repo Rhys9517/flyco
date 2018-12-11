@@ -1,6 +1,16 @@
 body{
     font: 12px/150% SimSun,"Microsoft Yahei",Arial,sans-serif;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style: none;
+  }
 /* ------------头顶------------- */
 .header {
     height: 35px;
@@ -189,10 +199,93 @@ a{
 .detailLeft{
     margin: 38px 47px 0 33px;
     width: 386px;
-    height: 450px;
+    height: 454px;
     border: 1px solid #ddd;
     background-color: #fff;
 }
+
+/* 供遮罩层移动区域 */
+
+.show-image {
+    position: relative;
+    width: 367px;
+    height: 368px;
+    font-size: 0;
+    overflow: hidden;
+    margin: 8px;
+  }
+
+  /* 放大图盒子 */
+
+  .show-image a {
+    width: 370px;
+    height: 368px;
+    display: block;
+    outline: none;
+  }
+
+  .show-image a img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  /* 遮罩层 */
+
+  .filter {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 240, 0.6);
+    cursor: move;
+    display: none;
+  }
+  .img-box{
+      height: 60px;
+  }
+  .img-box>a{
+      display: inline-block;
+      height: 60px;
+      width: 13px;
+      
+  }
+  .img-box>li {
+    display: inline-block;
+    border: 1px solid transparent;
+    margin-left: 2px;
+  }
+
+  .img-box>li img {
+    width: 58px;
+    height: 58px;
+    border: 1px solid #dad7d7;
+    margin-bottom: 55px;
+  }
+
+
+
+  /* 放大镜 */
+
+  .show-big-image {
+    position: absolute;
+    left: 476px;
+    top: 206px;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    display: none;
+  }
+
+  .show-big-image img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 826px;
+    height: 823px;
+  }
+
 
 
 
