@@ -190,10 +190,7 @@ body{
     background: #f5f5f5;
     color: #616161;
 }
-a{
-    color: #000;
-    outline: none;
-}
+
 .goods-detail-info{
     height: 582px;
     background-color: #fff;

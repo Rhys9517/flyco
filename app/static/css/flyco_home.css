@@ -91,7 +91,7 @@
 .home_show {
     width: 1245px;
     height: 170px;
-    border-bottom: 1px solid #dfdfdf;
+    border-bottom: 1px solid #f6f6f6;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
@@ -115,11 +115,13 @@
     display: block;
 }
 
-/* 热卖单品 */
-.hotgoods {
-    width: 1240px;
-    margin-right: auto;
-    margin-left: auto;
+ /* 热卖单品 */
+
+.hotgoods{
+    width: 100%;
+    height: 1143px;
+    margin: 0 auto;
+    background:#f6f6f6;
 }
 
 .hotgoods h2 {
@@ -129,7 +131,16 @@
     line-height: 77px;
     padding: 0;
     margin-top: 0px;
+} 
+.hotgoods .container .hot_imglist a{
+    display: block;
+    float: left;
 }
+.hotgoods .container .hot_imglist .hot_img04{
+    widows: 298px;
+    height: 680px;
+}
+
 
 /* 新品上市 */
 .newgoods {
