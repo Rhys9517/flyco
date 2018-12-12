@@ -149,12 +149,7 @@ body{
 }
 
 .search-box {
-    width: 435px;
-    height: 40px;
-}
-
-.search-box {
-    width: 432px;
+    width: 421px;
     height: 40px;
     /* border: 1px solid red; */
     float: right;
@@ -163,7 +158,7 @@ body{
     color: rgb(169, 169, 169);
 }
 
-.search-fr .search-txt {
+ .search-txt {
     width: 382px;
     height: 38px;
     border: 1px solid #dfdfdf;
@@ -174,13 +169,10 @@ body{
 .search-fr i {
     display: block;
     float: right;
-    width: 38px;
+    width: 39px;
     height: 38px;
     border: 1px solid #dfdfdf;
     background: url(../image/searchbg.png) 0 0;
-    position: absolute;
-    left: 1108px;
-    top: 71px;
 }
 /* —————————放大镜板块———————— */
 .breadcrumbs{
@@ -362,7 +354,7 @@ body{
     text-align: center;
     font-size: 16px;
     display: inline-block;
-    
+    cursor: pointer;
 }
 #buy_num {
     margin: 0 2px;
@@ -381,6 +373,7 @@ body{
     text-align: center;
     font-size: 16px;
     display: inline-block;
+    cursor: pointer;
 }
 .mt12 {
     margin-top: 12px;
@@ -419,6 +412,11 @@ body{
     background-color: #2264af;
     cursor: pointer;
 }
+
+
+
+
+
 
 
 
