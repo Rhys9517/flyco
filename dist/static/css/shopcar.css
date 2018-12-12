@@ -1,1 +1,70 @@
+/* 结算页面 */
+/* 表格菜单 */
+.shop_menu{
+    margin:40px auto 0 auto;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #fafafa;
+    color:#9fa0a0;
+    font-size:14px;
+}
+.check_btn01{
+    margin-left:5px;
+}
+.goods_info{
+    padding: 0 666px 0 30px;
+}
+.goods_count{
+    padding: 0 190px 0 120px;
+}
+.goods_tol{
+    padding: 0 30px 0 0px;
+}
+/* 表格具体内容 */
+.shop_list{
+    height: 150px;
+    display: flex;
+    border-bottom: 1px solid #9fa0a0;
+    align-items: center;
+}
+.shop_list .goods_int{
+    width: 670px;
+}
+.shop_list .goods_int .goods_img{
+    width:120px;
+}
+.shop_list .goods_int .goods_name{
+    width:550px;
+}
+.shop_list .btn_shop{
+    width: 140px;
+    height: 30px;
+    border: 1px solid #fafafa;
+    display: flex;
+    justify-content: space-between;
+}
+.shop_list .btn_shop button{
+    width: 30px;
+    height: 30px;
+    color: #9fa0a0
+}
+.shop_list .shop_price{
+    width:109px;
+    margin-left: 56px;
+}
+.shop_list .shop_total{
+    width: 84px;
+    text-align: center;
+    margin-left: 96px;
+}
+.shop_del{
+    margin: 20px 0 0 30px;
+   
 
+}
+.shop_del span{
+    font-size: 15px;
+    color: #9fa0a0;
+    margin-left: 5px;
+}

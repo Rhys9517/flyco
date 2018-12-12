@@ -6,7 +6,7 @@
 
     <title>飞科商城--购物车</title>
     <link rel="stylesheet" href="../static/css/base.css">
-    <link rel="stylesheet" href="../static/css/shop.css">
+    <link rel="stylesheet" href="../static/css/shopcar.css">
     <link rel="stylesheet" href="../static/css/flyco_register.css">
     <link rel="stylesheet" href="../static/css/flyco_home.css">
    
@@ -50,7 +50,7 @@
                 </div>
                 <div class="shopping-bar">
                     <div class="shopping-cart">
-                        <a href="" class="mini-cart">
+                        <a href="http://localhost:1818/static/shopcar.html" class="mini-cart">
                             <i>
                                 <img src="../static/image/cartp.png" alt="">
                             </i>
@@ -69,7 +69,31 @@
                 </div>
             </div>
         </div>
-
+        <!-- 结算页面 -->
+        <div class="shop_title container"><img src="../static/image/cart_tit.png"/></div>
+        <div class="container">
+        <div class="shop_menu">
+            <input type="checkbox" class="check_btn01"/>
+            <span class="goods_info">商品</span>
+            <span>单价</span>
+            <span class="goods_count">数量</span>
+            <span class="goods_tol">小计</span>
+            <span>操作</span>
+        </div>
+        </div>
+        <ul class="shop_list container">
+                <li><input type="checkbox" class="check_btn01"/></li>
+                <li class="goods_int"><div class="goods_img"></div><span class="goods_name">FS871飞科剃须刀</span></div>
+                <li class="shop_price"><span>单价</span></li>
+                <li class="btn_shop"><button class="btn_reduce">-</button><span>1</span><button class="btn_add">+</button></li>
+                <li class="shop_total"><span>小计</span></li>
+                <li class="btn_del_shop"><button>删除</button></li>
+        </ul>
+        
+        <div class="shop_del container">
+        <a href="#"><img src="../static/image/btn_del.jpg"/><span>清空购物车</span></a>
+        <a href="#"  class="del_chioce"><img src="../static/image/btn_del.jpg"/><span>删除选中项</span></a>
+        </div>
 
 
 
