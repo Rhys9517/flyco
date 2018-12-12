@@ -1,8 +1,4 @@
-[{
-  "code": 1,
-  "message": "success",
-  "result": {
-    "userAccount": "admin",
-    "userPwd": "123456"
-  }
-}]
+{
+  "userAccount": "zhangsan@qq.com",
+  "userPwd": "123456"
+}

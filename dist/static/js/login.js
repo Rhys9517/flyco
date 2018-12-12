@@ -87,11 +87,7 @@ Login = {
     }
   }, "必须输入手机号码");
 
-  jQuery.validator.setDefaults({
-    debug: true,
-    success: "valid"
-  });
-  $('#userNameLogin').validate({
+  var a = $('#userNameLogin').validate({
     rules: {
       userAccount: {
         emailOrPhone: true,
@@ -104,7 +100,21 @@ Login = {
       //   // emailOrPhone
       // }
     }
-  });
+  })
+
+  $('#userNameLogin').submit(function() {
+    // alert(a.form())
+    if (a.form()) {
+      $.get('/static/json/user.json', function(res) {
+        if ($('input[name="userAccount"]').val() === res.userAccount && $('input[name="userPwd"]').val() === res.userPwd) {
+          alert('登录成功');
+          location.href = '/static/home.html';
+        } else {
+          alert('登录失败');
+        }
+      })
+    }
+  })
 
   $('#codeLogin').validate({
     rules: {
