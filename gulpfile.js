@@ -102,7 +102,7 @@ gulp.task('all',function(){
   .pipe(connect.reload())
 })
 gulp.task('dev',function(cb){
-  gulpSequence('clean','all','watch','connect')(cb);
+  gulpSequence('all','watch','connect')(cb);
 })
 
 //正式环境使用 压缩html.css images
