@@ -52,7 +52,7 @@
             </div>
             <div class="shopping-bar">
                 <div class="shopping-cart">
-                    <a href="shopcar.html" class="mini-cart">
+                    <a href="" class="mini-cart">
                         <i>
                             <img src="../static/image/cartp.png" alt="">
                         </i>
@@ -78,41 +78,49 @@
                 <button class="btn m_static act">注册用户登录</button>
                 <button class="btn m_active">手机动态验证码登录</button>
             </div>
-            <form>
+            <form id="userNameLogin">
                 <!-- 注册用户登录 -->
                 <ul id="static" class="">
                     <li class="contact">
                         <i class="iconfont icon-youxiang"></i>
-                        <input type="text" class="txt01" placeholder="邮箱/手机" maxlength="64" id="userAccount">
+                        <input type="text" class="txt01" placeholder="邮箱/手机" maxlength="64" id="userAccount" name="userAccount">
                     </li>
                     <li class="pass">
                         <i class="iconfont icon-mima"></i>
-                        <input type="password" class="txt02" placeholder="密码" maxlength="64" id="userPwd">
+                        <input type="password" class="txt02" placeholder="密码" maxlength="64" id="userPwd" name="userPwd">
                     </li>
                 </ul>
-                <!-- 手机动态验证码登录 -->
-                <!-- <ul id="active" class="">
-                    <li class="checkcode">
-                                <i class="iconfont icon-mima"></i>
-                                <input type="text" class="ck_num" placeholder="请输入验证码" maxlength="4">
-                     </li>
-                    <li class="tel">
-                        <i class="iconfont icon-youxiang"></i>
-                        <input type="text" class="tel_num" placeholder="请输入手机号" maxlength="11">
-                    </li>
-                    <li class="tel_checkcode">
-                        <i class="iconfont icon-mima"></i>
-                        <input type="text" class="tel_ck_num"" placeholder="请输入手机验证码" maxlength="4">
-                    </li>
-                </ul> -->
-
-                <button id="login">登录</button>
+                <input type="submit" id="login1" class="loginBtn">
                 </br>
                 <div class="login_bottom">
                     <input type="checkbox" class="check" />&nbsp;<span>两周内免登录&nbsp;|&nbsp;</span>
                     <a href="#">忘记密码?</a>&nbsp;&nbsp;&nbsp;&nbsp;<span>还没有账号?&nbsp;</span><a href="#">立即注册</a>
                 </div>
             </form>
+
+            <form id="codeLogin" class="none">
+                <!-- 手机动态验证码登录 -->
+                <ul id="active">
+                    <li class="contact">
+                        <i class="iconfont icon-youxiang"></i>
+                        <input type="text" class="txt01" placeholder="请输入手机号" maxlength="11" name="phoneInput">
+                    </li>
+                    <li class="pass">
+                        <i class="iconfont icon-mima"></i>
+                        <input type="text" class="txt02" placeholder="请输入手机验证码" maxlength="4" name="codeInput">
+                    </li>
+                </ul>
+                <input type="submit" id="login2" class="loginBtn">
+                </br>
+                <div class="login_bottom">
+                    <input type="checkbox" class="check" />&nbsp;<span>两周内免登录&nbsp;|&nbsp;</span>
+                    <a href="#">忘记密码?</a>&nbsp;&nbsp;&nbsp;&nbsp;<span>还没有账号?&nbsp;</span><a href="#">立即注册</a>
+                </div>
+            </form>
+
+
+
+
             <i>—————&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他方式登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—————</i><br />
             <ul class="log_bottom">
                 <li><a href="#" class="iconfont icon-wechat"></a></li>
@@ -120,8 +128,8 @@
             </ul>
         </div>
     </div>
-   <!-- 尾部 -->
-   <div class="footer">
+    <!-- 尾部 -->
+    <div class="footer">
         <div class="container pt20">
             <div class="inner-footer">
                 <div class="fl">
@@ -257,6 +265,8 @@
     </div>
 
     <script src="rescourse/jquery.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/additional-methods.min.js"></script>
     <script src="js/login.js"></script>
 </body>
 

@@ -74,10 +74,15 @@
     height: 27px;
     padding-left: 40px;
 }
+.login_page .error {
+    display: block;
+    color: red;
+    text-align: left;
+}
 /* 手机动态验证码 */
 
 
-.login_page form>button{
+.login_page form .loginBtn{
 	width: 300px;
     height: 39px;
     line-height: 39px;
