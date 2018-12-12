@@ -46,25 +46,25 @@ Login = {
       })
     })
   },
-  changeLoginMethod: function () {
-    var _this = this
-    _this.dom.$changeBtn.on('click', function (e) {
-      let target = $(e.target)
-      if (!target.hasClass('act')) {
-        target.addClass('act')
-        target.siblings('.btn').removeClass('act')
-        if (target.hasClass('m_static')) {
-          $('#static').removeClass('none')
-          $('#active').addClass('none')
-        } else {
-          $('#static').addClass('none')
-          $('#active').removeClass('none')
-        }
-      }
-    })
-  }
-};
+   changeLoginMethod: function () {
+     var _this = this
+     _this.dom.$changeBtn.on('click', function (e) {
+       let target = $(e.target)
+       if (!target.hasClass('act')) {
+         target.addClass('act')
+         target.siblings('.btn').removeClass('act')
+         if (target.hasClass('m_static')) {
+           $('#static').removeClass('none')
+           $('#active').addClass('none')
+         } else {
+           $('#static').addClass('none')
+           $('#active').removeClass('none')
+         }
+       }
+     })
+   }
+ };
 
-(function () {
+ (function () {
   Login.init()
-})()
+ })()
