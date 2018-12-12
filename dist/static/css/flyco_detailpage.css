@@ -13,9 +13,9 @@ body{
   }
 /* ------------头顶------------- */
 .header {
-    height: 35px;
+    height: 36px;
     background: #fafafa;
-    border-bottom: 1px solid #dfdfdf
+    border-bottom: 1px solid #dfdfdf;
 }
 
 .fl {
@@ -29,7 +29,7 @@ body{
     text-align: center;
     width: 44px;
     font-size: 12px;
-    padding-left: 8px;
+    padding-left: 20px;
 }
 
 .top_collect a {
@@ -43,9 +43,9 @@ body{
     text-align: center;
     width: 44px;
     font-size: 12px;
-    padding-left: 8px;
+    padding-left: 20px;
     color: #a5a5a5;
-    margin-left: 1px;
+    margin-left: 5px;
 }
 
 .ri {
@@ -160,6 +160,7 @@ body{
     float: right;
     margin-top: 35px;
     margin-right: 10px;
+    color: rgb(169, 169, 169);
 }
 
 .search-fr .search-txt {
@@ -167,6 +168,7 @@ body{
     height: 38px;
     border: 1px solid #dfdfdf;
     padding-left: 8px;
+    position: relative;
 }
 
 .search-fr i {
@@ -176,11 +178,9 @@ body{
     height: 38px;
     border: 1px solid #dfdfdf;
     background: url(../image/searchbg.png) 0 0;
-    margin: 0;
-    padding: 0;
     position: absolute;
-    left: 1065px;
-    top: 70px;
+    left: 1108px;
+    top: 71px;
 }
 /* —————————放大镜板块———————— */
 .breadcrumbs{
@@ -194,7 +194,7 @@ body{
 .goods-detail-info{
     height: 582px;
     background-color: #fff;
-    border: 1px solid rebeccapurple
+    /* border: 1px solid rebeccapurple */
 }
 .detailLeft{
     margin: 38px 47px 0 33px;
@@ -244,6 +244,7 @@ body{
   }
   .img-box{
       height: 60px;
+      margin-left: 6px;
   }
   .img-box>a{
       display: inline-block;
@@ -294,7 +295,7 @@ body{
 .detailRight{
     width: 708px;
     height: 540px;
-    border: 1px solid red
+    /* border: 1px solid red */
 }
 .fm{
     font-family: "Microsoft Yahei", sans-serif;
@@ -313,6 +314,7 @@ body{
     margin: 10px 0;
     padding-top: 10px;
     border-top: 1px dotted #ccc;
+    color: #818181
 }
 .pt10 {
     padding-top: 10px;
@@ -341,7 +343,82 @@ body{
 .pb10 {
     padding-bottom: 10px;
 }
+/* ---------点击------- */
+.clic{
+    margin-top: 20px;
+    color: #818181;
+    height: 26px;
+    display: block
+}
+.mr20 {
+    margin-right: 20px;
+}
+.minus{
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    text-align: center;
+    font-size: 16px;
+    display: inline-block;
+    
+}
+#buy_num {
+    margin: 0 2px;
+    width: 48px;
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+.plus{
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    text-align: center;
+    font-size: 16px;
+    display: inline-block;
+}
+.mt12 {
+    margin-top: 12px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mr10 {
+    margin-right: 10px;
+}
+.in_b {
+    display: inline-block;
+}
 
+#btn{
+    float: left;
+    display: block
+}
+#buy{
+    width: 141px;
+    height: 48px;
+    line-height: 48px;
+    border: 0;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #df7141;
+}
+#cart{
+    width: 141px;
+    height: 48px;
+    line-height: 48px;
+    border: 0;
+    color: #fff;
+    font-size: 18px;
+    background-color: #2264af;
+    cursor: pointer;
+}
 
 
 

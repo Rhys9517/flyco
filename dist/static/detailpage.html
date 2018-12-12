@@ -72,7 +72,7 @@
     <!-- ------------------放大镜板块------------- -->
     <div class="breadcrumbs">
         <div class="container">
-            <a href="">首页</a>
+            <a href="http://localhost:1818/static/home.html">首页</a>
             <span>/</span>
             <a href="javascript:void(0);">飞科智能剃须刀FS375</a>
         </div>
@@ -83,33 +83,33 @@
 
                 <div class="show-image">
                     <a href="javascript:void(0)">
-                        <img src="image/FS375_000_01.jpg" alt="">
+                        <img src="http://localhost:1818/static/image/FS375_000_01.jpg" alt="">
                         <span class="filter"></span>
                     </a>
                 </div>
 
                 <div class="show-big-image">
                     <span>
-                        <img src="image/FS375_000_01.jpg" alt="" id="big-image">
+                        <img src="http://localhost:1818/static/image/FS375_000_01.jpg" alt="" id="big-image">
                     </span>
                 </div>
 
                 <ul class="img-box">
                     <a href="javascript:void(0)" style="background: url(image/prev.png) no-repeat 0 center"></a>
                     <li class="active">
-                        <img src="image/FS375_000_01.jpg" alt="">
+                        <img src="http://localhost:1818/static/image/FS375_000_01.jpg" alt="">
                     </li>
                     <li class="active">
-                        <img src="image/FS375_000_02.jpg" alt="">
+                        <img src="http://localhost:1818/static/image/FS375_000_02.jpg" alt="">
                     </li>
                     <li class="active">
-                        <img src="image/FS375_000_03.jpg" alt="">
+                        <img src="http://localhost:1818/static/image/FS375_000_03.jpg" alt="">
                     </li>
                     <li class="active">
-                        <img src="image/FS375_000_04.jpg" alt="">
+                        <img src="http://localhost:1818/static/image/FS375_000_04.jpg" alt="">
                     </li>
                     <li class="active">
-                        <img src="image/FS375_000_05.jpg" alt="">
+                        <img src="http://localhost:1818/static/image/FS375_000_05.jpg" alt="">
                     </li>
                     <a href="javascript:void(0)" style="background: url(image/slidenext.png) no-repeat 0 center"></a>
                 </ul>
@@ -136,152 +136,164 @@
                 </div>
 
                 <div class="fm sale-info">
-                    <p class="pt10">客户评价:
+                    <p class="pt10" style="color: #818181">客户评价:
                         <span class="color9 f12">480评价</span>
                     </p>
-                    <p class="pt10 pb10">商品累计月销量
+                    <p class="pt10 pb10" style="color: #818181">商品累计月销量
                         <span class="orange">30347</span>
                     </p>
+                </div>
+                <div id="" class="clic fm mt20">
+                    <span class="fl mr20" style="padding-top: 4px;">购买数量：</span>
+                    <div class="fl number mr20 fm">
+                        <span id="reduce" class="minus fl">-</span>
+                        <input id="buy_num" type="text" class="fl" style="text-align:center" value="1" onkeyup="value = value.replace(/[^\d]/g, '')">
+                        <span id="add" class=" plus mr20">+</span>库存95285件
+                    </div>
+                </div>
+                <div id="btn" class="detail_btn mt12">
+                    <button id="buy" class="fl in_b mr10 fm">立即购买</button>
+                    <button id="cart" class="fl in_b fm">加入购物车</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- -------------------底部------------------ -->
-    <div class="footer">
-        <div class="container pt20">
-            <div class="inner-footer">
-                <div class="fl">
-                    <img class="fl png_bg" src="../static/image/ensure.png" alt="">
-                    <span class="fl tc ml20">领导品牌 品质保证</span>
+    <div class="footer ">
+        <div class="container pt20 ">
+            <div class="inner-footer ">
+                <div class="fl ">
+                    <img class="fl png_bg " src="../static/image/ensure.png " alt=" ">
+                    <span class="fl tc ml20 ">领导品牌 品质保证</span>
                 </div>
-                <div class="fl">
-                    <img class="fl png_bg" src="../static/image/return.png" alt="">
-                    <span class="fl tc ml20">7天退货 15天换货</span>
+                <div class="fl ">
+                    <img class="fl png_bg " src="../static/image/return.png " alt=" ">
+                    <span class="fl tc ml20 ">7天退货 15天换货</span>
 
                 </div>
-                <div class="fl">
-                    <img class="fl png_bg" src="../static/image/free.png" alt="">
-                    <span class="fl tc ml20">全场免运费（部分配件除外）</span>
+                <div class="fl ">
+                    <img class="fl png_bg " src="../static/image/free.png " alt=" ">
+                    <span class="fl tc ml20 ">全场免运费（部分配件除外）</span>
                 </div>
-                <div class="fl">
-                    <img class="fl png_bg" src="../static/image/unprofor.png" alt="">
-                    <span class="fl tc ml20">全国网点 联保服务</span>
+                <div class="fl ">
+                    <img class="fl png_bg " src="../static/image/unprofor.png " alt=" ">
+                    <span class="fl tc ml20 ">全国网点 联保服务</span>
                 </div>
             </div>
-            <div class="link">
-                <div class="fl link-left fm f14">
-                    <dl class="fl">
-                        <dt class="fm f16 fb mb12">购物服务</dt>
-                        <dd class="mt5 mb8">
-                            <a href="">购物指南</a>
+            <div class="link ">
+                <div class="fl link-left fm f14 ">
+                    <dl class="fl ">
+                        <dt class="fm f16 fb mb12 ">购物服务</dt>
+                        <dd class="mt5 mb8 ">
+                            <a href=" ">购物指南</a>
                         </dd>
-                        <dd class="mt5 mb8">
-                            <a href="">配送方式</a>
+                        <dd class="mt5 mb8 ">
+                            <a href=" ">配送方式</a>
                         </dd>
-                        <dd class="mt5 mb8">
-                            <a href="">支付方式</a>
-                        </dd>
-                    </dl>
-
-                    <dl class="fl">
-                        <dt class="fm f16 fb mb12">服务支持</dt>
-                        <dd class="mt5 mb8">
-                            <a href="">积分规则</a>
-                        </dd>
-                        <dd class="mt5 mb8">
-                            <a href="">保修政策</a>
-                        </dd>
-                        <dd class="mt5 mb8">
-                            <a href="">服务网点</a>
+                        <dd class="mt5 mb8 ">
+                            <a href=" ">支付方式</a>
                         </dd>
                     </dl>
 
-                    <dl class="fl">
-                        <dt class="fm f16 fb mb12">关于我们</dt>
-                        <dd class="mt5 mb8">
-                            <a href="">新浪微博</a>
+                    <dl class="fl ">
+                        <dt class="fm f16 fb mb12 ">服务支持</dt>
+                        <dd class="mt5 mb8 ">
+                            <a href=" ">积分规则</a>
                         </dd>
-                        <dd class="mt5 mb8">
-                            <a href="">关注微信</a>
+                        <dd class="mt5 mb8 ">
+                            <a href=" ">保修政策</a>
                         </dd>
-                        <dd class="mt5 mb8">
-                            <a href="">APP下载</a>
+                        <dd class="mt5 mb8 ">
+                            <a href=" ">服务网点</a>
                         </dd>
                     </dl>
 
-                    <dl class="fl">
-                        <dt class="fm f16 fb mb12">关于飞科</dt>
-                        <dd class="mt5 mb8">
-                            <a href="">飞科介绍</a>
+                    <dl class="fl ">
+                        <dt class="fm f16 fb mb12 ">关于我们</dt>
+                        <dd class="mt5 mb8 ">
+                            <a href=" ">新浪微博</a>
                         </dd>
-                        <dd class="mt5 mb8">
-                            <a href="">飞科新闻</a>
+                        <dd class="mt5 mb8 ">
+                            <a href=" ">关注微信</a>
                         </dd>
-                        <dd class="mt5 mb8">
-                            <a href="">联系我们</a>
+                        <dd class="mt5 mb8 ">
+                            <a href=" ">APP下载</a>
+                        </dd>
+                    </dl>
+
+                    <dl class="fl ">
+                        <dt class="fm f16 fb mb12 ">关于飞科</dt>
+                        <dd class="mt5 mb8 ">
+                            <a href=" ">飞科介绍</a>
+                        </dd>
+                        <dd class="mt5 mb8 ">
+                            <a href=" ">飞科新闻</a>
+                        </dd>
+                        <dd class="mt5 mb8 ">
+                            <a href=" ">联系我们</a>
                         </dd>
                     </dl>
                 </div>
 
-                <div class="fl link-center pa">
-                    <img class="png-bg" src="../static/image/qr_code.jpg" alt="">
-                    <p class="P">关注飞科电器官方微信</p>
+                <div class="fl link-center pa ">
+                    <img class="png-bg " src="../static/image/qr_code.jpg " alt=" ">
+                    <p class="P ">关注飞科电器官方微信</p>
                 </div>
-                <div class="service pa" style="top: 75px">
-                    <img class="png-bg" src="../static/image/service1.png" alt="">
+                <div class="service pa " style="top: 75px ">
+                    <img class="png-bg " src="../static/image/service1.png " alt=" ">
                 </div>
             </div>
             <!-- 版权信息 -->
-            <div class="copyRight">
-                <div class="container">
-                    <div class="fl" style="width:173px;height: 53px;">
-                        <img class="minilogo" src="../static/image/minilogo.jpg" alt="">
+            <div class="copyRight ">
+                <div class="container ">
+                    <div class="fl " style="width:173px;height: 53px; ">
+                        <img class="minilogo " src="../static/image/minilogo.jpg " alt=" ">
                     </div>
-                    <div class="fl" style="color: #939191;width: 575px;height: 63px;">
-                        <p class="mt25" style="color: #939191;"> Copyright © 2013-2016上海飞科电器股份有限公司 | 版权所有 |
-                            <a href="" style="color: #939191;">网站备案/许可证号：沪ICP备13041208号</a>
+                    <div class="fl " style="color: #939191;width: 575px;height: 63px; ">
+                        <p class="mt25 " style="color: #939191; "> Copyright © 2013-2016上海飞科电器股份有限公司 | 版权所有 |
+                            <a href=" " style="color: #939191; ">网站备案/许可证号：沪ICP备13041208号</a>
                         </p>
-                        <p class="" style="font-size: 12px;">
-                            <a href="" style="color:#939191;vertical-align:middle;">增值电信营业经营许可认证:沪B2-20160083 | </a>
-                            <a href="">
-                                <img src="../static/image/fkab.png" alt="" style="display:inherit;vertical-align:middle;">
-                                <span style="color:#939191;vertical-align:middle;">沪公网安备 31010502001341号</span>
+                        <p class=" " style="font-size: 12px; ">
+                            <a href=" " style="color:#939191;vertical-align:middle; ">增值电信营业经营许可认证:沪B2-20160083 | </a>
+                            <a href=" ">
+                                <img src="../static/image/fkab.png " alt=" " style="display:inherit;vertical-align:middle; ">
+                                <span style="color:#939191;vertical-align:middle; ">沪公网安备 31010502001341号</span>
                             </a>
                         </p>
                     </div>
 
-                    <div class="rightImg fr mt25">
-                        <img class="wori" src="../static/image/wori.png" alt="">
-                        <!-- <a href="">
-                                <img class="in_b" src="../static/image/rightimg1.jpg" alt="">
+                    <div class="rightImg fr mt25 ">
+                        <img class="wori " src="../static/image/wori.png " alt=" ">
+                        <!-- <a href=" ">
+                                <img class="in_b " src="../static/image/rightimg1.jpg " alt=" ">
                             </a>
                             <span>|</span>
-                            <a href="">
-                                <img class="in_b" src="../static/image/rightimg2.jpg" alt="">
+                            <a href=" ">
+                                <img class="in_b " src="../static/image/rightimg2.jpg " alt=" ">
                             </a>
                             <span>|</span>
-                            <a href="">
-                                <img class="in_b" src="../static/image/rightimg3.jpg" alt="">
+                            <a href=" ">
+                                <img class="in_b " src="../static/image/rightimg3.jpg " alt=" ">
                             </a>
                             <span>|</span>
-                            <img class="in_b" src="../static/image/rightimg4.jpg" alt=""> -->
+                            <img class="in_b " src="../static/image/rightimg4.jpg " alt=" "> -->
                     </div>
                 </div>
             </div>
             <!-- 版权信息 -->
         </div>
-        <div class="QQ-service">
-            <a href="">
-                <img style="width: 74px;" border="0" ;display="block" src="../static/image/tglx.jpg" alt="">
+        <div class="QQ-service ">
+            <a href=" ">
+                <img style="width: 74px; " border="0 " ;display="block " src="../static/image/tglx.jpg " alt=" ">
             </a>
         </div>
-        <div class="online">
-            <a href="">
-                <img style="border:none;" display="block" src="../static/image/578c880225538.jpg" alt="">
+        <div class="online ">
+            <a href=" ">
+                <img style="border:none; " display="block " src="../static/image/578c880225538.jpg " alt=" ">
             </a>
         </div>
     </div>
 </body>
-<script src="../static/js/magnifying_glass.js"></script>
+<script src="../static/js/magnifying_glass.js "></script>
 
 </html>
