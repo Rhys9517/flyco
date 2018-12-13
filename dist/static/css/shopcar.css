@@ -1,5 +1,6 @@
 /* 结算页面 */
 /* 表格菜单 */
+
 .shop_menu{
     margin:40px auto 0 auto;
     width: 100%;
@@ -67,4 +68,41 @@
     font-size: 15px;
     color: #9fa0a0;
     margin-left: 5px;
+}
+.shop_money{
+    padding: 57px 0 33px 925px;
+  
+    color: #9fa0a0;
+}
+.shop_money strong{
+    padding-left: 70px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 30px;
+    display: inline-block;
+    color: orangered;
+}
+.btn_bottom{
+  width:300px;
+  height:38px;
+margin-left: 925px;
+}
+.btn_bottom .goon{
+    border: 1px solid #dcdddd;
+    background-color: #fafafa;
+    color: #727171;
+    width: 147px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 15px;
+}
+.btn_bottom .payit{   
+     border: 1px solid #ff7c44;
+    background-color: #ff7c44;
+    color: #fff;
+    width: 147px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 15px;
+    position: absolute;
 }
