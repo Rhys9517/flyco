@@ -328,9 +328,13 @@
 }
 
 .regBtn .register-button {
-    width: 322px;
-    height: 30px;
-    line-height: 30px;
+    display: block;
+    text-align: center;
+    width: 300px;
+    height: 39px;
+    line-height: 39px;
+    border: 0;
+    margin-bottom: 10px;
     background-color: #0c82d9;
     color: #fff;
     font-size: 15px;
