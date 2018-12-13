@@ -1,8 +1,0 @@
-[{
-  "code": 1,
-  "message": "success",
-  "result": {
-    "userAccount": "admin",
-    "userPwd": "123456"
-  }
-}]

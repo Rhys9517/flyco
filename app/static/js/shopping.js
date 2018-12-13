@@ -1,4 +1,7 @@
-var shop = (function() {
+
+
+var shop = (function () {
+
     var $div = document.querySelector('#go_shop'),
         $spanOne = document.querySelector('#reduce'),
         $input = document.querySelector('#buy_num'),
@@ -11,7 +14,7 @@ var shop = (function() {
         },
         event() {
             var _this = this;
-            $spanOne.onclick = function(e) {
+            $spanOne.onclick = function (e) {
                 e = e.event || window.event;
                 num--;
                 if (num <= 0) {
@@ -21,7 +24,7 @@ var shop = (function() {
                 _this.setItem(num)
                 console.log(num)
             }
-            $spanTow.onclick = function(e) {
+            $spanTow.onclick = function (e) {
                 e = e.event || window.event;
                 num++;
                 $input.innerHTML = num;
@@ -29,6 +32,8 @@ var shop = (function() {
                 console.log(num)
             }
         },
+
+
         //把商品储存到本地
         setItem(data) {
             // 现获取原有数据
@@ -40,5 +45,6 @@ var shop = (function() {
             localStorage.shoppingList = JSON.stringify(shoppingList)
         }
     }
+
 }());
 shop.init()

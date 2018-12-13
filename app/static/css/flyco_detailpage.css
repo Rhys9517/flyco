@@ -151,6 +151,7 @@ body{
 .search-box {
     width: 421px;
     height: 40px;
+    /* border: 1px solid red; */
     float: right;
     margin-top: 35px;
     margin-right: 10px;
@@ -159,17 +160,17 @@ body{
 
  .search-txt {
     width: 382px;
-    height: 40px;
+    height: 38px;
     border: 1px solid #dfdfdf;
     padding-left: 8px;
-    /* position: relative; */
+    position: relative;
 }
 
 .search-fr i {
     display: block;
     float: right;
     width: 39px;
-    height: 40px;
+    height: 38px;
     border: 1px solid #dfdfdf;
     background: url(../image/searchbg.png) 0 0;
 }

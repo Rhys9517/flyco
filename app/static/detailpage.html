@@ -152,16 +152,8 @@
                     </div>
                 </div>
                 <div id="btn" class="detail_btn mt12">
-                    <a href="javascript:void(0)" style="color: #fff">
-                        <button id="buy" class="fl in_b mr10 fm">
-                            立即购买
-                        </button>
-                    </a>
-                    <a href="javascript:void(0)" style="color: #fff">
-                        <button id="cart" class="fl in_b fm">
-                            加入购物车
-                        </button>
-                    </a>
+                    <button id="buy" class="fl in_b mr10 fm">立即购买</button>
+                    <button id="cart" class="fl in_b fm">加入购物车</button>
                 </div>
             </div>
         </div>
@@ -272,6 +264,19 @@
 
                     <div class="rightImg fr mt25 ">
                         <img class="wori " src="../static/image/wori.png " alt=" ">
+                        <!-- <a href=" ">
+                                <img class="in_b " src="../static/image/rightimg1.jpg " alt=" ">
+                            </a>
+                            <span>|</span>
+                            <a href=" ">
+                                <img class="in_b " src="../static/image/rightimg2.jpg " alt=" ">
+                            </a>
+                            <span>|</span>
+                            <a href=" ">
+                                <img class="in_b " src="../static/image/rightimg3.jpg " alt=" ">
+                            </a>
+                            <span>|</span>
+                            <img class="in_b " src="../static/image/rightimg4.jpg " alt=" "> -->
                     </div>
                 </div>
             </div>
@@ -293,38 +298,5 @@
 <script src="../static/js/ajax_promise.js"></script>
 <script src="../static/js/shopping.js"></script>
 <script src="../static/json/shopping.json"></script>
-<script>
-    var shop = (function () {
-        $cart = document.querySelector('#cart');
-        return {
-            init() {
-                this.event();
-            },
-            event() {
-                var _this = this;
-                $cart.onclick = function (e) {
-                    console.log(JSON.parse(localStorage.shoppingList));
-                    e = e.event || window.event;
-                    sendAjax('http://localhost:1818/static/json/shopping.json').then(res => {
-                        res = JSON.parse(res);
-                        if (res.code == 0) {
-                            this.data = res.data;
-                            _this.setItem(res.data);
-                        } else {
-                            alert("获取信息失败")
-                        }
-                    })
-                }
-            },
-            setItem(data) {
-                var shoppingList = localStorage.getItem('shoppingList') || '[]';
-                shoppingList = JSON.parse(shoppingList);
-                shoppingList.push(data);
-                localStorage.shoppingList = JSON.stringify(shoppingList)
-            }
-        }
-    }());
-    shop.init()
-</script>
 
 </html>
