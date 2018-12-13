@@ -76,7 +76,7 @@ Login = {
     } else {
       return false;
     }
-  }, "必须输入邮箱地址或者手机号码");
+  }, "请输入正确的邮箱或者手机号码");
 
   $.validator.addMethod("phone", function (value, element, params) {
     var reg2 = /^1\d{10}$/;
@@ -95,7 +95,7 @@ Login = {
       userPwd: 'required',
     },
     messages: {
-      userPwd: '必须输入密码'
+      userPwd: '密码不能为空'
       // userAccount: {
       //   // emailOrPhone
       // }
