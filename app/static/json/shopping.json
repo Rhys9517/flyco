@@ -1,0 +1,29 @@
+{
+    "code": "0",
+    "data": [
+        {
+            "id": 1,
+            "title": "飞科智能剃须刀FS375",
+            "price": "￥139",
+            "src": "http://localhost:1818/static/image/FS375_000_01.jpg"
+        },
+        {
+            "id": 2,
+            "title": "围巾",
+            "price": "30",
+            "src": "xxxxx.png"
+        },
+        {
+            "id": 3,
+            "title": "手套",
+            "price": "16",
+            "src": "xxxxx.png"
+        },
+        {
+            "id": 4,
+            "title": "棉鞋",
+            "price": "48",
+            "src": "xxxxx.png"
+        }
+    ]
+}
