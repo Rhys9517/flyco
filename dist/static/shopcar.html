@@ -9,101 +9,132 @@
     <link rel="stylesheet" href="../static/css/shopcar.css">
     <link rel="stylesheet" href="../static/css/flyco_register.css">
     <link rel="stylesheet" href="../static/css/flyco_home.css">
-   
+
 </head>
+
 <body>
-        <!---------------头顶--------------- -->
-        <div class="header">
-            <div class="container">
-                <ul class="fl">
-                    <li class="top_collect">
-                        <a href="">收藏</a>
-                    </li>
-                    <li class="weixin">
-                        <a href="">微信</a>
-                    </li>
-                </ul>
-                <ul class="ri">
-                    <li class="login">
-                        <a href="login.html">登陆</a>
-                        <span class="sp">|</span>
-                    </li>
-                    <li class="register">
-                        <a href="register.html">注册</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- -------头顶下面的头----66--- -->
-        <div class="header_center">
-            <div class="container">
-                <div class="logo_fl">
-                    <a href="home.html">
-                        <img src="../static/image/logo.gif" alt="">
-                    </a>
-                </div>
-                <div class="logo-head">
-                    <a href="home.html" class="in_b">
-                        <img src="../static/image/home.png" alt="">
-                        <span>首页</span>
-                    </a>
-                </div>
-                <div class="shopping-bar">
-                    <div class="shopping-cart">
-                        <a href="shopcar.html" class="mini-cart">
-                            <i>
-                                <img src="../static/image/cartp.png" alt="">
-                            </i>
-                              购物车
-                            <span>(0)</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="search-box">
-                    <form action="" class="search-fr">
-                        <input type="text" class="search-txt" placeholder="剃须刀" style="color: rgb(169, 169, 169);">
-                        <a href="">
-                            <i></i>
-                        </a>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- 结算页面 -->
-        
-        <div class="shop_title container"><img src="../static/image/cart_tit.png"/></div>
+    <!---------------头顶--------------- -->
+    <div class="header">
         <div class="container">
-        <div class="shop_menu">
-            <input type="checkbox" class="check_btn01"/>
-            <span class="goods_info">商品</span>
-            <span>单价</span>
-            <span class="goods_count">数量</span>
-            <span class="goods_tol">小计</span>
-            <span>操作</span>
+            <ul class="fl">
+                <li class="top_collect">
+                    <a href="">收藏</a>
+                </li>
+                <li class="weixin">
+                    <a href="">微信</a>
+                </li>
+            </ul>
+            <ul class="ri">
+                <li class="login">
+                    <a href="login.html">登陆</a>
+                    <span class="sp">|</span>
+                </li>
+                <li class="register">
+                    <a href="register.html">注册</a>
+                </li>
+            </ul>
         </div>
+    </div>
+    <!-- -------头顶下面的头----66--- -->
+    <div class="header_center">
+        <div class="container">
+            <div class="logo_fl">
+                <a href="home.html">
+                    <img src="../static/image/logo.gif" alt="">
+                </a>
+            </div>
+            <div class="logo-head">
+                <a href="home.html" class="in_b">
+                    <img src="../static/image/home.png" alt="">
+                    <span>首页</span>
+                </a>
+            </div>
+            <div class="shopping-bar">
+                <div class="shopping-cart">
+                    <a href="shopcar.html" class="mini-cart">
+                        <i>
+                            <img src="../static/image/cartp.png" alt="">
+                        </i>
+                        购物车
+                        <span>(0)</span>
+                    </a>
+                </div>
+            </div>
+            <div class="search-box">
+                <form action="" class="search-fr">
+                    <input type="text" class="search-txt" placeholder="剃须刀" style="color: rgb(169, 169, 169);">
+                    <a href="">
+                        <i></i>
+                    </a>
+                </form>
+            </div>
+        </div>
+
+        <!-- 结算页面 -->
+
+        <div class="shop_title container">
+            <img src="../static/image/cart_tit.png" />
+        </div>
+        <div class="container">
+
+            <div class="shop_menu">
+                <input type="checkbox" class="check_btn01" />
+                <span class="goods_info">商品</span>
+                <span>单价</span>
+                <span class="goods_count">数量</span>
+                <span class="goods_tol">小计</span>
+                <span>操作</span>
+            </div>
+
         </div>
         <ul class="shop_list container">
-                <li><input type="checkbox" class="check_btn01"/></li>
-                <li class="goods_int"><div class="goods_img"></div><span class="goods_name">FS871飞科剃须刀</span></div>
-                <li class="shop_price"><span>单价</span></li>
-                <li class="btn_shop"><button class="btn_reduce">-</button><span>1</span><button class="btn_add">+</button></li>
-                <li class="shop_total"><span>小计</span></li>
-                <li class="btn_del_shop"><button>删除</button></li>
-        </ul>
-        
-        <div class="shop_del container">
-        <a href="#"><img src="../static/image/btn_del.jpg"/><span>清空购物车</span></a>
-        <a href="#"  class="del_chioce"><img src="../static/image/btn_del.jpg"/><span>删除选中项</span></a>
-        </div>
-        <div class="shop_money">
-            <span>商品总计:</span>
-            <strong>￥<b>129</b><em>元</em></strong>
-        </div>
-        <div class="btn_bottom">
-            <input type="submit" onclick="home.html" value="继续购物" class="goon"/>
-            <input type="submit"  value="去结算"  class="payit"/>
-        </div>
-         
+            <li>
+                <input id="select" type="checkbox" class="check_btn01" />
+            </li>
+            <li class="goods_int">
+                <div class="goods_img"></div>
+                <span class="goods_name">FS871飞科剃须刀</span>
+    </div>
+    <li class="shop_price">
+        <span id="cost" style="color: #666">￥138</span>
+    </li>
+    <li class="btn_shop">
+        <button id="jian" class="btn_reduce">-</button>
+        <span id="how" style="line-height: 30px;"></span>
+        <button id="jia" class="btn_add">+</button>
+    </li>
+    <li class="shop_total">
+        <span id="Zcost" style="color: #0c82d9">￥138</span>
+    </li>
+    <li class="btn_del_shop">
+        <button id="cancel">删除</button>
+    </li>
+    </ul>
+
+    <div class="shop_del container">
+        <a href="#">
+            <img src="../static/image/btn_del.jpg" />
+            <span>清空购物车</span>
+        </a>
+        <a href="#" class="del_chioce">
+            <img src="../static/image/btn_del.jpg" />
+            <span>删除选中项</span>
+        </a>
+    </div>
+
+
+
+    <div class="shop_money">
+        <span>商品总计:</span>
+        <strong>￥
+            <b>129</b>
+            <em>元</em>
+        </strong>
+    </div>
+    <div class="btn_bottom">
+        <input type="submit" onclick="home.html" value="继续购物" class="goon" />
+        <input type="submit" value="去结算" class="payit" />
+    </div>
 
 
 
@@ -112,115 +143,113 @@
 
 
 
-
-
-        <!-- 尾部 -->
-     <div class="footer">
-            <div class="container pt20">
-                <div class="inner-footer">
-                    <div class="fl">
-                        <img class="fl png_bg" src="../static/image/ensure.png" alt="">
-                        <span class="fl tc ml20">领导品牌 品质保证</span>
-                    </div>
-                    <div class="fl">
-                        <img class="fl png_bg" src="../static/image/return.png" alt="">
-                        <span class="fl tc ml20">7天退货 15天换货</span>
-    
-                    </div>
-                    <div class="fl">
-                        <img class="fl png_bg" src="../static/image/free.png" alt="">
-                        <span class="fl tc ml20">全场免运费（部分配件除外）</span>
-                    </div>
-                    <div class="fl">
-                        <img class="fl png_bg" src="../static/image/unprofor.png" alt="">
-                        <span class="fl tc ml20">全国网点 联保服务</span>
-                    </div>
+    <!-- 尾部 -->
+    <div class="footer">
+        <div class="container pt20">
+            <div class="inner-footer">
+                <div class="fl">
+                    <img class="fl png_bg" src="../static/image/ensure.png" alt="">
+                    <span class="fl tc ml20">领导品牌 品质保证</span>
                 </div>
-                <div class="link">
-                    <div class="fl link-left fm f14">
-                        <dl class="fl">
-                            <dt class="fm f16 fb mb12">购物服务</dt>
-                            <dd class="mt5 mb8">
-                                <a href="">购物指南</a>
-                            </dd>
-                            <dd class="mt5 mb8">
-                                <a href="">配送方式</a>
-                            </dd>
-                            <dd class="mt5 mb8">
-                                <a href="">支付方式</a>
-                            </dd>
-                        </dl>
-    
-                        <dl class="fl">
-                            <dt class="fm f16 fb mb12">服务支持</dt>
-                            <dd class="mt5 mb8">
-                                <a href="">积分规则</a>
-                            </dd>
-                            <dd class="mt5 mb8">
-                                <a href="">保修政策</a>
-                            </dd>
-                            <dd class="mt5 mb8">
-                                <a href="">服务网点</a>
-                            </dd>
-                        </dl>
-    
-                        <dl class="fl">
-                            <dt class="fm f16 fb mb12">关于我们</dt>
-                            <dd class="mt5 mb8">
-                                <a href="">新浪微博</a>
-                            </dd>
-                            <dd class="mt5 mb8">
-                                <a href="">关注微信</a>
-                            </dd>
-                            <dd class="mt5 mb8">
-                                <a href="">APP下载</a>
-                            </dd>
-                        </dl>
-    
-                        <dl class="fl">
-                            <dt class="fm f16 fb mb12">关于飞科</dt>
-                            <dd class="mt5 mb8">
-                                <a href="">飞科介绍</a>
-                            </dd>
-                            <dd class="mt5 mb8">
-                                <a href="">飞科新闻</a>
-                            </dd>
-                            <dd class="mt5 mb8">
-                                <a href="">联系我们</a>
-                            </dd>
-                        </dl>
-                    </div>
-    
-                    <div class="fl link-center pa">
-                        <img class="png-bg" src="../static/image/qr_code.jpg" alt="">
-                        <p class="P">关注飞科电器官方微信</p>
-                    </div>
-                    <div class="service pa" style="top: 75px">
-                        <img class="png-bg" src="../static/image/service1.png" alt="">
-                    </div>
+                <div class="fl">
+                    <img class="fl png_bg" src="../static/image/return.png" alt="">
+                    <span class="fl tc ml20">7天退货 15天换货</span>
+
                 </div>
-                <!-- 版权信息 -->
-                <div class="copyRight">
-                    <div class="container">
-                        <div class="fl" style="width:173px;height: 53px;">
-                            <img class="minilogo" src="../static/image/minilogo.jpg" alt="">
-                        </div>
-                        <div class="fl" style="color: #939191;width: 575px;height: 63px;">
-                            <p class="mt25" style="color: #939191;"> Copyright © 2013-2016上海飞科电器股份有限公司 | 版权所有 |
-                                <a href="" style="color: #939191;">网站备案/许可证号：沪ICP备13041208号</a>
-                            </p>
-                            <p class="" style="font-size: 12px;">
-                                <a href="" style="color:#939191;vertical-align:middle;">增值电信营业经营许可认证:沪B2-20160083 | </a>
-                                <a href="">
-                                    <img src="../static/image/fkab.png" alt="" style="display:inherit;vertical-align:middle;">
-                                    <span style="color:#939191;vertical-align:middle;">沪公网安备 31010502001341号</span>
-                                </a>
-                            </p>
-                        </div>
-    
-                        <div class="rightImg fr mt25">
-                            <img class="wori" src="../static/image/wori.png" alt="">
-                            <!-- <a href="">
+                <div class="fl">
+                    <img class="fl png_bg" src="../static/image/free.png" alt="">
+                    <span class="fl tc ml20">全场免运费（部分配件除外）</span>
+                </div>
+                <div class="fl">
+                    <img class="fl png_bg" src="../static/image/unprofor.png" alt="">
+                    <span class="fl tc ml20">全国网点 联保服务</span>
+                </div>
+            </div>
+            <div class="link">
+                <div class="fl link-left fm f14">
+                    <dl class="fl">
+                        <dt class="fm f16 fb mb12">购物服务</dt>
+                        <dd class="mt5 mb8">
+                            <a href="">购物指南</a>
+                        </dd>
+                        <dd class="mt5 mb8">
+                            <a href="">配送方式</a>
+                        </dd>
+                        <dd class="mt5 mb8">
+                            <a href="">支付方式</a>
+                        </dd>
+                    </dl>
+
+                    <dl class="fl">
+                        <dt class="fm f16 fb mb12">服务支持</dt>
+                        <dd class="mt5 mb8">
+                            <a href="">积分规则</a>
+                        </dd>
+                        <dd class="mt5 mb8">
+                            <a href="">保修政策</a>
+                        </dd>
+                        <dd class="mt5 mb8">
+                            <a href="">服务网点</a>
+                        </dd>
+                    </dl>
+
+                    <dl class="fl">
+                        <dt class="fm f16 fb mb12">关于我们</dt>
+                        <dd class="mt5 mb8">
+                            <a href="">新浪微博</a>
+                        </dd>
+                        <dd class="mt5 mb8">
+                            <a href="">关注微信</a>
+                        </dd>
+                        <dd class="mt5 mb8">
+                            <a href="">APP下载</a>
+                        </dd>
+                    </dl>
+
+                    <dl class="fl">
+                        <dt class="fm f16 fb mb12">关于飞科</dt>
+                        <dd class="mt5 mb8">
+                            <a href="">飞科介绍</a>
+                        </dd>
+                        <dd class="mt5 mb8">
+                            <a href="">飞科新闻</a>
+                        </dd>
+                        <dd class="mt5 mb8">
+                            <a href="">联系我们</a>
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="fl link-center pa">
+                    <img class="png-bg" src="../static/image/qr_code.jpg" alt="">
+                    <p class="P">关注飞科电器官方微信</p>
+                </div>
+                <div class="service pa" style="top: 75px">
+                    <img class="png-bg" src="../static/image/service1.png" alt="">
+                </div>
+            </div>
+            <!-- 版权信息 -->
+            <div class="copyRight">
+                <div class="container">
+                    <div class="fl" style="width:173px;height: 53px;">
+                        <img class="minilogo" src="../static/image/minilogo.jpg" alt="">
+                    </div>
+                    <div class="fl" style="color: #939191;width: 575px;height: 63px;">
+                        <p class="mt25" style="color: #939191;"> Copyright © 2013-2016上海飞科电器股份有限公司 | 版权所有 |
+                            <a href="" style="color: #939191;">网站备案/许可证号：沪ICP备13041208号</a>
+                        </p>
+                        <p class="" style="font-size: 12px;">
+                            <a href="" style="color:#939191;vertical-align:middle;">增值电信营业经营许可认证:沪B2-20160083 | </a>
+                            <a href="">
+                                <img src="../static/image/fkab.png" alt="" style="display:inherit;vertical-align:middle;">
+                                <span style="color:#939191;vertical-align:middle;">沪公网安备 31010502001341号</span>
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="rightImg fr mt25">
+                        <img class="wori" src="../static/image/wori.png" alt="">
+                        <!-- <a href="">
                                     <img class="in_b" src="../static/image/rightimg1.jpg" alt="">
                                 </a>
                                 <span>|</span>
@@ -233,22 +262,26 @@
                                 </a>
                                 <span>|</span>
                                 <img class="in_b" src="../static/image/rightimg4.jpg" alt=""> -->
-                        </div>
                     </div>
                 </div>
-                <!-- 版权信息 -->
             </div>
-            <div class="QQ-service">
-                <a href="">
-                    <img style="width: 74px;" border="0" ;display="block" src="../static/image/tglx.jpg" alt="">
-                </a>
-            </div>
-            <div class="online">
-                <a href="">
-                    <img style="border:none;" display="block" src="../static/image/578c880225538.jpg" alt="">
-                </a>
-            </div>
+            <!-- 版权信息 -->
         </div>
-    </body>
+        <div class="QQ-service">
+            <a href="">
+                <img style="width: 74px;" border="0" ;display="block" src="../static/image/tglx.jpg" alt="">
+            </a>
+        </div>
+        <div class="online">
+            <a href="">
+                <img style="border:none;" display="block" src="../static/image/578c880225538.jpg" alt="">
+            </a>
+        </div>
+    </div>
+    <script src="../static/js/shopcart.js"></script>
+    <!-- <script>
+        shopCar.insertData(["77", [333], [456], 548, { yuyg: 15 }]);
+    </script> -->
+</body>
 
-    </html>
+</html>
