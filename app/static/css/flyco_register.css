@@ -360,3 +360,10 @@
     background: #0c82d9;
     height: 213px;
 }
+
+#phoneInput-error, #password-error, #repassword-error {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    color: red;
+}
