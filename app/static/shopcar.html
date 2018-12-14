@@ -92,21 +92,21 @@
         <li class="goods_int">
             <div class="goods_img"></div>
             <span class="goods_name">FS871飞科剃须刀</span>
-            </div>
-            <li class="shop_price">
-                <span id="cost" style="color: #666">￥138</span>
-            </li>
-            <li class="btn_shop">
-                <button id="jian" class="btn_reduce">-</button>
-                <span id="how" style="line-height: 30px;"></span>
-                <button id="jia" class="btn_add">+</button>
-            </li>
-            <li class="shop_total">
-                <span id="Zcost" style="color: #0c82d9">￥138</span>
-            </li>
-            <li class="btn_del_shop">
-                <button id="cancel">删除</button>
-            </li>
+        </li>
+        <li class="shop_price">
+            <span id="cost" style="color: #666">￥138</span>
+        </li>
+        <li class="btn_shop">
+            <button id="jian" class="btn_reduce">-</button>
+            <span id="how" style="line-height: 30px;"></span>
+            <button id="jia" class="btn_add">+</button>
+        </li>
+        <li class="shop_total">
+            <span id="Zcost" style="color: #0c82d9">￥138</span>
+        </li>
+        <li class="btn_del_shop">
+            <button id="cancel">删除</button>
+        </li>
     </ul>
     <div class="shop_del container">
         <a href="#">
@@ -129,10 +129,6 @@
         <input type="submit" onclick="home.html" value="继续购物" class="goon" />
         <input type="submit" value="去结算" class="payit" />
     </div>
-
-
-
-
 
 
 
@@ -243,19 +239,6 @@
 
                     <div class="rightImg fr mt25">
                         <img class="wori" src="../static/image/wori.png" alt="">
-                        <!-- <a href="">
-                                    <img class="in_b" src="../static/image/rightimg1.jpg" alt="">
-                                </a>
-                                <span>|</span>
-                                <a href="">
-                                    <img class="in_b" src="../static/image/rightimg2.jpg" alt="">
-                                </a>
-                                <span>|</span>
-                                <a href="">
-                                    <img class="in_b" src="../static/image/rightimg3.jpg" alt="">
-                                </a>
-                                <span>|</span>
-                                <img class="in_b" src="../static/image/rightimg4.jpg" alt=""> -->
                     </div>
                 </div>
             </div>
@@ -272,10 +255,184 @@
             </a>
         </div>
     </div>
-    <script src="../static/js/shopcart.js"></script>
-    <!-- <script>
-        shopCar.insertData(["77", [333], [456], 548, { yuyg: 15 }]);
-    </script> -->
+    <script src="../static/js/ajax_promise.js"></script>
+    <script>
+
+
+        var shopCar = (function () {
+            var $radio = document.querySelector('#select'),
+                $cost = document.querySelector('#cost'),
+                $jian = document.querySelector('#jian'),
+                $how = document.querySelector('#how'),
+                $jia = document.querySelector('#jia'),
+                $Zcost = document.querySelector('#Zcost'),
+                $cancel = document.querySelector('#cancel');
+            return {
+                init() {
+                    this.event();
+                    this.getData();
+                },
+                event() {
+                    var _this = this;
+                },
+                getHow() {
+                    var shoppingList = localStorage.shoppingList || '[]';
+                    shoppingList = JSON.parse(shoppingList);
+                    this.insertSpan(shoppingList)
+                },
+                insertSpan(data) {
+                    data.forEach((item, index) => {
+                        if (typeof item == 'object') {
+                            // console.log($how)
+                            var arr = localStorage.shoppingList;
+                            var arr = arr.split(',');
+                            $how.innerHTML = arr.slice(arr.length - 5, arr.length - 4);
+                        }
+                    })
+                },
+                getData() {
+                    sendAjax('json/shopping.json').then(res => {
+                        res = JSON.parse(res);
+                        if (res.code == 0) {
+                            this.data = res.data;
+                            this.insertData(res.data);
+                        } else {
+                            alert("获取信息失败, 请查询网络状况");
+                        }
+                    });
+                },
+                insertData(data) {
+                    data.forEach((item, index) => {
+                        var $ul = document.createElement('ul');
+                        $ul.className = 'shop_list container';
+                        var $li = document.createElement('li');
+                        // $li.className='pre-sell-box';
+                        $ul.appendChild($li);
+                        var $delete = document.createElement('input');
+                        $delete.type = 'checkbox';
+                        $delete.id = 'select';
+                        $delete.className = 'check_btn01';
+                        $li.appendChild($delete);
+                        var $li_2 = document.createElement('li');
+                        $li_2.className = 'goods_int';
+                        $ul.appendChild($li_2);
+                        var $div = document.createElement('div');
+                        $div.className = 'goods_img';
+                        $li_2.appendChild($div);
+                        var $title = document.createElement('span');
+                        $title.className = 'goods_name';
+                        $title.innerHTML = data[0].title;
+                        $li_2.appendChild($title);
+                        var $li_3 = document.createElement('li');
+                        $li_3.className = 'shop_price';
+                        $ul.appendChild($li_3);
+                        var $span_2 = document.createElement('span');
+                        $span_2.id = 'cost';
+                        $span_2.innerHTML = data[0].price;
+                        $li_3.appendChild($span_2);
+                        var $li_4 = document.createElement('li');
+                        $li_4.className = 'btn_shop';
+                        $ul.appendChild($li_4);
+                        var $btn_1 = document.createElement('button');
+                        $btn_1.id = 'jian';
+                        $btn_1.className = 'btn_reduce';
+                        $btn_1.innerHTML = '-';
+                        $li_4.appendChild($btn_1);
+                        var $span_3 = document.createElement('span');
+                        $span_3.id = 'how';
+
+                        $span_3.innerHTML = $how.innerHTML
+
+                        $li_4.appendChild($span_3);
+                        var $btn_2 = document.createElement('button');
+                        $btn_1.id = 'jia';
+                        $btn_1.className = 'btn_add';
+                        $btn_1.innerHTML = '+';
+                        $li_4.appendChild($btn_2);
+                        var $li_5 = document.createElement('li');
+                        $li_5.className = 'shop_total';
+                        $ul.appendChild($li_5);
+                        // var $ul=document.createElement('ul');
+                        // $ul.className='table';
+                        // var $li=document.createElement('li');
+                        // $li.className='pre-sell-box';
+                        // $ul.appendChild($li);
+
+                        // var $div=document.createElement('div');
+                        // $div.className='pay-pro';
+                        // $li.appendChild($div);
+                        // var $i=document.createElement('i');
+                        // $div.appendChild($i);
+                        // var $a=document.createElement('a');
+                        // $div.appendChild($a);
+                        // var $p=document.createElement('p');
+                        // $div.appendChild($p);
+                        // var $pa=document.createElement('a');
+                        // $pa.innerHTML=data.name;
+                        // $p.appendChild($pa);
+                        // var $span=document.createElement('span');
+                        // $span.innerHTML=`尺码:${data.size}`;
+                        // $p.appendChild($span);
+                        // var $b=document.createElement('b');
+                        // $b.innerHTML=`颜色:${data.color}`;
+                        // $span.appendChild($b);
+                        // var $divprice=document.createElement('div');
+                        // $divprice.className='product-price';
+                        // $li.appendChild($divprice);
+                        // var $pricep=document.createElement('p')
+                        // $pricep.innerHTML=data.price;
+                        // $divprice.appendChild($pricep);
+                        // var $divcartnum=document.createElement('div');
+                        // $divcartnum.className='adjust';
+                        // $li.appendChild($divcartnum);
+                        // var $spanreduce=document.createElement('span');
+                        // $spanreduce.innerHTML='-';
+                        // $divcartnum.appendChild($spanreduce);
+                        // var $input=document.createElement('input');
+                        // $input.value=data.count;
+                        // $divcartnum.appendChild($input);
+                        // var $spanadd=document.createElement('span');
+                        // $spanadd.innerHTML='+';
+                        // $divcartnum.appendChild($spanadd);
+                        // var $divsum=document.createElement('div');
+                        // $divsum.className='sub-total';
+                        //     $divsum.innerHTML='￥'+data.count*data.price.split('￥')[1]+'.00';
+                        //     $li.appendChild($divsum);
+                        // var $divdel=document.createElement('div');
+                        // $divdel.className='cart-operation';
+                        // var $spandel=document.createElement('span');
+                        // $spandel.innerHTML='删除';
+                        // var $spansc=document.createElement('span');
+                        // $spansc.innerHTML='移入收藏';
+                        // $divdel.appendChild($spandel);
+                        // $divdel.appendChild($spansc)
+                        // $li.append($divdel); 
+                        console.log(data[0].title);
+                        var arr = localStorage.shoppingList;
+                        var arr = arr.split(',');
+                        $how.innerHTML = arr.slice(arr.length - 5, arr.length - 4);
+                        console.log($how.innerHTML);
+                    })
+                },
+                // insertData(data) {
+                //     data.forEach((item, index) => {
+                //         var $li = document.createElement('li');
+                //         $li.index = index;
+                //         $li.innerHTML = `
+                //             商品名称:<span class='title'>${data[index].title}</span></br>
+                //             商品价格<span class='price'>${data[index].price}</span></br>
+                //             购买数量<input class="count" value=${data[index].count} placeholder="请输入数量" /></br>
+                //             小计<span>${data[index].price * data[index].count}</span></br>
+                //             <button>删除</button>
+                //         `
+                //         $ul.appendChild($li);
+                //     })
+                // }
+            }
+
+        }())
+        shopCar.init();
+    </script>
 </body>
 
 </html>

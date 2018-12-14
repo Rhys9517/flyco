@@ -23,7 +23,7 @@ function sendAjax(url, obj) {
         }
         // 添加一个时间戳, 解决get请求的缓存问题
         url += `_=${Date.now()}`;
-        console.log(url);
+        // console.log(url);
         _default.data = null;
     } else if (_default.method == 'POST') {
 
