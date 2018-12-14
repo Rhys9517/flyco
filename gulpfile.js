@@ -28,7 +28,7 @@ gulp.task('default',['build-html','minijs','watch','connect'])
 gulp.task('connect', function() {
   connect.server({
     root: 'dist',
-    port: '1818',
+    port: '5118',
     livereload: true
   });
 });
@@ -89,6 +89,18 @@ gulp.task('watch', function () {
 
 
 //开发环境使用
+// gulp.task('clean',()=>{
+//   del('dist','rev')
+// })
+// gulp.task('watch',function(){
+//   gulp.watch('app/**/*.*',['all', 'sass'])
+// })
+// gulp.task('all',function(){
+//   gulp.src(['app/**/*.*','!app/static/css/*.scss'] )
+//   .pipe(gulp.dest('dist'))
+//   .pipe(connect.reload())
+// })
+// gulp.task('dev',gulpSequence('all', 'sass','watch','connect'))
 
 gulp.task('clean',()=>{
   del('dist','rev')
